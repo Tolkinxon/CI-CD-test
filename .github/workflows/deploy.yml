@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to server
         run: |
           ssh -o StrictHostKeyChecking=no tolkinxon@185.191.141.120 "
-            cd /var/www/my-project &&
+            cd /var/www/my-project/CI-CD-test &&
             git pull origin main &&
             npm install &&
             pm2 restart my-project
